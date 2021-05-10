@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = "./;hall";
+package hall;
+
+// Hellowrold
+service Registery{
+	rpc Ping(RegisteryRequest) returns (RegisteryResponse) {}
+}
+
+message RegisteryRequest {
+	string name = 1;
+}
+
+message RegisteryResponse {
+	string msg = 1;
+}
